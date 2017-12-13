@@ -83,7 +83,14 @@ func (s resourceClassNamespaceLister) List(selector labels.Selector) (ret []*v1a
 
 // Get retrieves the ResourceClass from the indexer for a given namespace and name.
 func (s resourceClassNamespaceLister) Get(name string) (*v1alpha1.ResourceClass, error) {
-	obj, exists, err := s.indexer.GetByKey(s.namespace + "/" + name)
+	// TODO(cph): rewrite here for Cluster scope compatibility
+	key := name
+	if s.namespace != "" {
+		key = s.namespace + "/" + name
+	}
+
+	obj, exists, err := s.indexer.GetByKey(key)
+
 	if err != nil {
 		return nil, err
 	}
