@@ -1,0 +1,22 @@
+apiVersion: caicloud.io/v1alpha1
+kind: ResourceClass
+metadata:
+  name: intel-cpu-e3
+spec:
+  resourceName: intel.com/cpu
+  deviceIDs:
+    - E3-1
+    - E3-2
+    - E3-3
+  matchExpressions:
+    - key: caicloud.io/resourceClass
+      operator: In
+      values:
+        - intel-low-cpu
+  nodes:
+    - name: node-1
+      dedicated: true
+    - name: node-2
+      dedicated: false
+    - name: node-3
+      dedicated: true
