@@ -25,7 +25,7 @@ $ kubectl create -f examples/resource-class-cpu.yaml
 
 ## Design Proposal
 
-Here is design proposal [PR](https://github.com/caicloud/oscenter-docs/pull/1), FYI.
+Here is [design proposal](https://docs.google.com/document/d/1EyOUHah_4hx3QCY0FGyM8n-1FHhIIlG47ws6BgDPfUk/edit?usp=sharing), FYI.
 
 ## Roadmap
 
