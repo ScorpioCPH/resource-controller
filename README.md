@@ -22,3 +22,19 @@ $ kubectl create -f examples/resource-class.yaml
 $ kubectl create -f examples/resource-class-cpu.yaml
 
 ```
+
+## Design Proposal
+
+Here is [design proposal](https://docs.google.com/document/d/1EyOUHah_4hx3QCY0FGyM8n-1FHhIIlG47ws6BgDPfUk/edit?usp=sharing), FYI.
+
+## Roadmap
+
+- It is still under development now.
+
+## Issues and Contributions
+
+Contributions are welcome!
+
+* You can report a bug by [filing a new issue](https://github.com/caicloud/resource-controller/issues/new)
+* You can contribute by opening a [pull request](https://help.github.com/articles/using-pull-requests/)
+
